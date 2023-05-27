@@ -1,7 +1,8 @@
 import React from "react";
 import track from "../../assets/track.svg";
-import { Alert, ProgressBar } from "react-bootstrap";
+import { Alert, ProgressBar, Button } from "react-bootstrap";
 import styles from "./PredictionResult.module.css";
+import { LinkContainer } from "react-router-bootstrap";
 
 function PredictionResult({ prediction, description }) {
   const precision = (prediction.probability * 100).toFixed(2);
@@ -36,6 +37,9 @@ function PredictionResult({ prediction, description }) {
       >
         {precision} %
       </ProgressBar>
+      <LinkContainer to={`/search/${prediction.className}`}>
+        <Button variant="success" className="mt-3 justify-content-center align-items-center d-flex" >View Details</Button>
+      </LinkContainer>
     </article>
   ) : (
     <Alert variant="warning">
