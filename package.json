@@ -1,7 +1,7 @@
 {
   "name": "techbazaar",
-  "version": "1.0.0",
-  "description": "MERN ecommerce webapp",
+  "version": "2.0.0",
+  "description": "MERN E-commerce Webapp",
   "main": "server.js",
   "type": "module",
   "scripts": {

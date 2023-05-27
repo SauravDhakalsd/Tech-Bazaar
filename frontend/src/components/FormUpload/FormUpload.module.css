@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.uploadContainer {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 3rem;
+}
+
+.uploadContainer h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  color: purple;
+}
+
+.buttonGroup {
+  max-width: 270px;
+  margin: 0 auto 2rem;
+}
+
+.button {
+  background-color: blueviolet;
+}
+
+.button:hover {
+  background-color: purple;
+}
+
+.image {
+  width: 220px;
+  display: flex;
+  margin: 0 auto 1rem;
+}

@@ -1,0 +1,25 @@
+{
+  "tfjsVersion": "1.3.1",
+  "tmVersion": "2.4.5",
+  "packageVersion": "0.8.4-alpha2",
+  "packageName": "@teachablemachine/image",
+  "timeStamp": "2023-05-27T15:22:54.765Z",
+  "userMetadata": {},
+  "modelName": "My image model",
+  "labels": [
+    "Samsung Galaxy Buds 2 Pro",
+    "Canon EOS 5D Mark IV",
+    "Apple Watch Series 7",
+    "Amazfit Bip 3 Pro",
+    "Realme GT Neo 3",
+    "Samsung Galaxy Tab A7",
+    "Xiaomi Pad 5",
+    "Asus TUF Gaming F15",
+    "Apple MacBook Air M2",
+    "Nothing Phone (1)",
+    "iPhone 14 Pro Max",
+    "Samsung Galaxy S22 Ultra",
+    "Samsung BU8000 75″ UHD TV"
+  ],
+  "imageSize": 224
+}

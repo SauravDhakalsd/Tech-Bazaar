@@ -13,7 +13,7 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
   title: "Welcome To Tech Bazaar",
-  description: "We sell the best products in Nepal",
+  description: "We sell the best technology products in Nepal",
   keywords: "electronics, buy electronics, cheap electroincs",
 };
 

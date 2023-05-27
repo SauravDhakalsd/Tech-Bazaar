@@ -12,6 +12,7 @@ import {
 } from "react-bootstrap";
 import Message from "../components/Message";
 import { addToCart, removeFromCart } from "../actions/cartActions";
+// import { addProduct } from "../hooks/useAlan"
 
 const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id;
@@ -19,6 +20,8 @@ const CartScreen = ({ match, location, history }) => {
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
 
   const dispatch = useDispatch();
+
+  // const addProduct = useAlan();
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
@@ -29,6 +32,11 @@ const CartScreen = ({ match, location, history }) => {
     }
   }, [dispatch, productId, qty]);
 
+  // useEffect(() => {
+  //   if (productId) {
+  //     dispatch(addToCartWithAlanAI(productId));
+  //   }
+  // }, [dispatch, productId, qty]);
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
   };
@@ -36,6 +44,22 @@ const CartScreen = ({ match, location, history }) => {
   const checkoutHandler = () => {
     history.push("/login?redirect=shipping");
   };
+
+  // const handleAlanCommand = (commandData) => {
+  //   if (commandData.command === COMMANDS.ADD_PRODUCT) {
+  //     useEffect(() => {
+  //       if (productId) {
+  //         dispatch(addToCart(productId, qty));
+  //       }
+  //     }, [dispatch, productId, qty]);
+  //   }
+  // };
+
+  // const handleAlanCommand = (commandData) => {
+  //   if (commandData.command === COMMANDS.ADD_PRODUCT) {
+  // addProduct();
+  //   }
+  // };
 
   return (
     <Row>

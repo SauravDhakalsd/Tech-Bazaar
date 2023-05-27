@@ -1,0 +1,64 @@
+.predictions {
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  width: 500px;
+  animation: slit-in-vertical 0.3s ease-in-out both;
+  line-height: 1.5;
+  box-shadow: 0 7.6px 10px rgba(0, 0, 0, 0.025), 0 61px 80px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  color: hsl(0, 0%, 19%);
+  font-size: 2rem;
+  font-family: "Raleway", Helvetica, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: hsl(0, 68%, 68%);
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+.subheading img {
+  display: inline-block;
+  max-width: 4%;
+  margin-right: 0.5rem;
+}
+
+.predictions h5 {
+  display: inline-block;
+  color: hsl(204, 72%, 74%);
+  font-size: 1rem;
+}
+
+.description > span {
+  display: block;
+  margin-top: 10px;
+  color: hsl(0, 0%, 19%);
+}
+
+.predictions > h5,
+.progress {
+  margin: 0;
+}
+
+@keyframes slit-in-vertical {
+  0% {
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  54% {
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateZ(0) rotateY(0);
+  }
+}

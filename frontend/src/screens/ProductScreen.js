@@ -15,10 +15,11 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Meta from "../components/Meta";
 import {
-  listProductDetails,
+  listProductInfo,
   createProductReview,
 } from "../actions/productActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
+import useAlan from "../hooks/useAlan";
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -46,7 +47,7 @@ const ProductScreen = ({ history, match }) => {
       setComment("");
     }
     if (!product._id || product._id !== match.params.id) {
-      dispatch(listProductDetails(match.params.id));
+      dispatch(listProductInfo(match.params.id));
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
   }, [dispatch, match, successProductReview]);
@@ -64,6 +65,8 @@ const ProductScreen = ({ history, match }) => {
       })
     );
   };
+
+  useAlan();
 
   return (
     <>
