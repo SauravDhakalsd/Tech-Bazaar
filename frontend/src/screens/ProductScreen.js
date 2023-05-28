@@ -19,7 +19,7 @@ import {
   createProductReview,
 } from "../actions/productActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
-import useAlan from "../hooks/useAlan";
+import useAlan from "../hook/useAlan";
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);

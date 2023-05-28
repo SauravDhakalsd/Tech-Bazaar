@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-top: 3rem; */
+  /* gap: 2rem; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.uploadContainer {
+  width: 100%;
+  max-width: 500px;
+  /* margin-left: 3rem; */
+}
+
+.uploadContainer img {
+  margin-left: 3rem;
+}
+
+.uploadContainer h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  color: purple;
+  margin-top: 3rem;
+}
+
+.buttonGroup {
+  max-width: 270px;
+  margin: 0 auto 2rem;
+}
+
+.button {
+  background-color: blueviolet;
+  display: flex;
+  margin: auto;
+}
+
+.buttonweb {
+  background-color: blueviolet;
+  display: flex;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.buttonagain {
+  background-color: blueviolet;
+  display: flex;
+  margin: auto;
+  margin-top: 3.3rem;
+  margin-bottom: 1rem;
+}
+
+.buttonweb:hover {
+  background-color: purple;
+}
+.button:hover {
+  background-color: purple;
+}
+
+.image {
+  width: 400px;
+  /* margin-top: -3rem; */
+  margin-left: 3rem;
+}
+
+.webcam {
+  margin-top: -3rem;
+  margin-left: 3rem;
+}
