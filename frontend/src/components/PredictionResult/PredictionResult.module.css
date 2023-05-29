@@ -1,6 +1,8 @@
 .predictions {
   background-color: hsl(0, 0%, 96%);
   border-radius: 4px;
+  margin-left: 3rem;
+  margin-top: 5rem;
   padding: 1rem 1.5rem;
   width: 500px;
   animation: slit-in-vertical 0.3s ease-in-out both;

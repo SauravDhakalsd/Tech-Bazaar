@@ -76,6 +76,9 @@ export function useFormUpload() {
         })
       );
 
+      const scanupload = document.getElementById("scanupload");
+      scanupload.style.display = "none";
+
       const image = document.getElementById("image");
       const mlPrediction = await predict(image);
 

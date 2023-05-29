@@ -67,7 +67,7 @@ function FormUpload() {
           )}
         </div>
       ) : (
-        <div className={styles.uploadContainer} {...getRootProps()}>
+        <div className={styles.uploadContainer} {...getRootProps()} id="formupload">
           <input {...getInputProps()} data-testid="upload-image" />
           <h2>Choose a file</h2>
 

@@ -19,7 +19,6 @@ import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import AI_Dashboard from "./pages/AI_Dashboard";
-// import ImageScan from "./components/WebcamSearch/ImageScan"
 
 const App = () => {
   return (
@@ -58,7 +57,6 @@ const App = () => {
             exact
           />
           <Route path="/AISearch" component={AI_Dashboard} />
-          {/* <Route path="/AIScan" component={ImageScan} /> */}
           <Route path="/" component={HomeScreen} exact />
         </Container>
       </main>
